@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-boost-blue: #1e3a8a;
+  --color-boost-gold: #f59e0b;
+  --color-boost-green: #16a34a;
+  --color-boost-red: #dc2626;
+  --color-boost-dark: #0f172a;
+  --color-boost-light: #f8fafc;
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Prose styles for AI output */
+.boost-output {
+  line-height: 1.7;
+}
+.boost-output h1, .boost-output h2, .boost-output h3 {
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+}
+.boost-output h1 { font-size: 1.25rem; }
+.boost-output h2 { font-size: 1.125rem; }
+.boost-output h3 { font-size: 1rem; }
+.boost-output ul, .boost-output ol {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+.boost-output ul { list-style-type: disc; }
+.boost-output ol { list-style-type: decimal; }
+.boost-output li { margin: 0.25rem 0; }
+.boost-output p { margin: 0.5rem 0; }
+.boost-output strong { font-weight: 600; color: #1e3a8a; }
+.boost-output em { font-style: italic; }
+.boost-output hr { border-color: #e2e8f0; margin: 1rem 0; }
